@@ -1,0 +1,786 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+	margin: 0 auto;
+	width:960px
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+h1 {
+	color: white;
+	font-size: 38px;
+	text-align: center;
+	font-family: "ヒラギノ丸ゴ ProN W4";
+	YuGothic,    /* Mac用 */
+	'Yu Gothic', /* Windows用 */
+	sans-serif;
+	letter-spacing: 1.4px;
+}
+
+h2 {
+	color: white;
+	font-size: 32px;
+	text-align: center;
+	font-family: "ヒラギノ丸ゴ ProN W4";
+	YuGothic,    /* Mac用 */
+	'Yu Gothic', /* Windows用 */
+	sans-serif;
+	letter-spacing: 1px;
+}
+
+h3 {
+	font-size: 24px;
+	text-align: center;
+	color:white;
+	font-weight: bold; 
+	font-family: "ヒラギノ丸ゴ ProN W4";
+}
+
+h4 {
+	color: #222222;
+	font-family: "ヒラギノ丸ゴ ProN W4";
+}
+
+h5 {
+	color: #222222;
+	font-size: 18px;
+	line-height:  3em;
+	font-family: "ヒラギノ丸ゴ ProN W4";
+}
+
+p {
+	color: black;
+	font-family: "ヒラギノ丸ゴ ProN W4";
+}
+
+/*ーーーーーーーーーーー*/
+/*ヘッダー背景
+/*ーーーーーーーーーーー*/
+header {
+	width: 900px;
+	margin: 0 auto;
+}
+.headerbg h1 {
+	color:black;
+	filter: drop-shadow(100px 100px 100px black);
+	padding-top: 120px;
+}
+.headerbg h2 {
+	color:black;
+	filter: drop-shadow(100px 100px 100px black);
+	padding-bottom: 120px;
+}
+.headerbg span {
+	background-color: white;
+}
+
+.headerbg {
+	height: 350px;
+	width: 900px;
+	background-image: url(../img/mainbg.png);
+	background-size: cover;
+	-webkit-filter: grayscale(80%);
+    -moz-filter: grayscale(80%);
+    -ms-filter: grayscale(80%);
+    -o-filter: grayscale(80%);
+    filter: grayscale(80%);
+}
+
+.headerbg:hover {
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+	}
+
+
+/*ーーーーーーーーーーー*/
+/*ヘッダーナビ
+/*ーーーーーーーーーーー*/
+
+.header__flex img {
+    width: 210px;
+    height:50px;
+    margin-top: 15px;
+}
+ul {
+list-style:none;
+}
+div {
+	padding: 0 30px;
+}
+.header__flex {
+	display: flex;
+	height:80px;
+	width: 900px;
+	align-items: center;
+	border-bottom: solid 2px #efefef;
+	background-color: white;
+}
+.header__flex nav {
+	margin-left: auto;
+}
+.header__flex ul {
+	display: flex;
+	padding-right: 15px;
+	padding-top: 10px;
+}
+.header__flex ul li {
+	margin-left: 60px;
+}
+.header__flex ul li a {
+    color: black;
+}
+
+
+/*ーーーーーーーーーーー*/
+/*main
+/*ーーーーーーーーーーー*/
+.main {
+	width: 960px;
+	margin-left: 0 auto;
+}
+
+/*ーーーーーーーーーーー*/
+/*about文言エリア
+/*ーーーーーーーーーーー*/
+
+.aboutbg {
+	height: 600px;
+	width: 900px;
+	background-image:url(../img/cheese-platter2.png);
+	margin-bottom: 50px;
+	background-size: cover;
+    -webkit-filter: grayscale(80%);
+    -moz-filter: grayscale(80%);
+    -ms-filter: grayscale(80%);
+    -o-filter: grayscale(80%);
+    filter: grayscale(80%);
+}
+
+.aboutbg:hover {
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+	}
+
+.about1 {
+	text-align: center;
+}
+.about1 h3 {
+	padding-top: 20px;
+	font-size: 30px;
+	color: black;
+}
+
+.about2 {
+	text-align: center;
+}
+.about2 p {
+	font-size: 23px;
+	color:black;
+}
+.about2 p span {
+	text-decoration: underline black 2px double;
+}
+.about3 {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.about3 p {
+	font-size: 21px;
+	color:black;
+}
+
+.about3 p span {
+	text-decoration: underline black 2px double;
+}
+.about4 {
+	margin-top: 40px;
+	text-align: center;
+}
+
+.about4 p {
+	font-size: 16px;
+	color: black;
+}
+.about4 p span {
+	text-decoration: underline black 2px dotted;
+}
+.about5 {
+	margin-top: 20px;
+	text-align: left;
+	width: 960px;
+}
+.about5 p span {
+	text-decoration: underline black 2px dotted;
+}
+
+.about5 p {
+	font-size: 16px;
+}
+.about6 {
+	margin-top: 20px;
+	text-align: center;
+}
+.about6 p span {
+	text-decoration: underline black 2px dotted;
+}
+
+.about6 p {
+	font-size: 16px;
+	padding-bottom: 60px;
+}
+
+/*ーーーーーーーーーーー*/
+/*スライドショー
+/*ーーーーーーーーーーー*/
+
+.slider-wrapper {
+	overflow: hidden;
+	margin: 0 auto;
+	-webkit-filter: grayscale(80%);
+    -moz-filter: grayscale(80%);
+    -ms-filter: grayscale(80%);
+    -o-filter: grayscale(80%);
+    filter: grayscale(80%);
+}
+.slider-wrapper:hover {
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+	}
+
+.slider {
+	position: relative;
+	left: 15vw; /* (100vw - SlideWidth) / 2 */ /* 20180210 変更 */
+	overflow: visible !important;
+}
+.slide {
+	width: 70vw !important;
+	height: 150px;
+}
+
+  /* bxSlider */
+.bx-wrapper {
+	box-shadow: none;
+	border: none;
+	margin: 0;
+}
+.gazou1{
+	width: 500px;
+	height: 250px;
+	background-image: url(../img/about_01.jpg);
+	object-fit: cover; 
+}
+.gazou2{
+	width: 500px;
+	height: 250px;
+	background-image: url(../img/about_02.jpg);
+	object-fit: cover; 
+}
+.gazou3{
+	width: 500px;
+	height: 250px;
+	background-image: url(../img/about_03.jpg);
+	object-fit: cover; 
+}
+.gazou4{
+	width: 500px;
+	height: 250px;
+	background-image: url(../img/about_04.jpg);
+	object-fit: cover; 
+}
+/*ーーーーーーーーーーー*/
+/*Course大枠
+/*ーーーーーーーーーーー*/
+.courseline {
+	width: 900px;
+	margin: 0 auto;
+    background-color: darkkhaki;
+	border: solid 1px black;
+}
+/*ーーーーーーーーーーー*/
+/*Course文言
+/*ーーーーーーーーーーー*/
+.course {
+	margin: 0 auto;
+	width: 900px;
+	margin-bottom: 60px;
+	background-image: url(../img/cheeses-2nd.png);
+    background-size: cover;
+	object-fit: contain;
+	height: 250px;
+	-webkit-filter: grayscale(80%);
+    -moz-filter: grayscale(80%);
+    -ms-filter: grayscale(80%);
+    -o-filter: grayscale(80%);
+    filter: grayscale(80%);
+}
+.course:hover {
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+	}
+
+.course img {
+	width: 900px;
+}
+.course1 {
+	padding-top: 50px;
+	text-align: center;
+}
+
+.course1 h4 {
+	color:black;
+	font-size: 30px;
+}
+
+.course2 {
+	margin-bottom: 64px;
+	margin-top: 10px;
+	line-height:  2em;
+	text-align: center;
+}
+.course２ span {
+	background-color: white;
+}
+
+
+.course2 p {
+	color: black;
+	font-size: 19px;
+}
+/*ーーーーーーーーーーー*/
+/*写真入り６つボックス
+/*ーーーーーーーーーーー*/
+.item {
+    flex: auto;
+	display: flex;
+	flex-wrap: wrap;
+	-webkit-filter: grayscale(80%);
+    -moz-filter: grayscale(80%);
+    -ms-filter: grayscale(80%);
+    -o-filter: grayscale(80%);
+    filter: grayscale(80%);
+}
+.item:hover {
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+	}
+
+.item p {
+	font-size: 15px;
+	line-height:  1.7em;
+
+}
+.item h5 span {
+	text-decoration:red underline wavy 2px;
+}
+.item p span {
+text-decoration: underline black 2px dotted;
+}
+
+
+
+.item1 {
+	background: url(../img/course_01.jpg);
+	background-size:cover;
+	width: 50%;
+	height: 300px;
+	border: solid 1px black;
+}
+.item2 {
+	width: 50%;
+	height: 300px;
+	padding-top: 40px;
+	border: solid 1px black;
+}
+
+.item3 {
+	width: 50%;
+	height: 300px;
+	padding-top: 40px;
+	border: solid 1px black;
+}
+.item4 {
+	background: url(../img/course_02.jpg);
+	background-size:cover;
+	width: 50%;
+	height: 300px;
+	border: solid 1px black;
+}
+.item5 {
+	background: url(../img/course_03.jpg);
+	background-size:cover;
+	width: 50%;
+	height: 300px;
+	border: solid 1px black;
+}
+.item6 {
+	width: 50%;
+	height: 300px;
+	padding-top: 40px;
+	border: solid 1px black;
+}
+
+/*ーーーーーーーーーーー*/
+/*ニュース
+/*ーーーーーーーーーーー*/
+
+.news {
+	margin: 0 auto;
+	width: 900px;
+	margin-bottom: 64px;
+	margin-top: 64px;
+	background-image: url(../img/letter2.png);
+    background-size: cover;
+	object-fit: cover;
+	height: 250px;
+	-webkit-filter: grayscale(80%);
+    -moz-filter: grayscale(80%);
+    -ms-filter: grayscale(80%);
+    -o-filter: grayscale(80%);
+    filter: grayscale(80%);
+}
+.news:hover {
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+	}
+
+.news h3 {
+	text-align: center;
+	padding-top: 70px;
+	font-size: 30px;
+	color: black;
+}
+
+.news p {
+	text-align: center;
+	margin-top: 20px;
+	padding-bottom: 50px;
+	font-size: 19px;
+}
+/*ーーーーーーーーーーー*/
+/*写真入り３つボックス
+/*ーーーーーーーーーーー*/
+.contents-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    margin-bottom: 56px;
+	margin-top: 64px;
+	-webkit-filter: grayscale(80%);
+    -moz-filter: grayscale(80%);
+    -ms-filter: grayscale(80%);
+    -o-filter: grayscale(80%);
+    filter: grayscale(80%);
+}
+.contents-wrap:hover {
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+	}
+
+.contents-box {
+	width: 30%;
+}
+
+.contents-box img {
+	display: block;
+	width: 200px;
+	height: 150px;
+	text-align: center;
+}
+.contents-box p {
+	width: 200px;
+	color: black;
+	margin-top: 0.8rem;
+	margin-bottom: 0.8rem;
+	font-size: 0.9rem;
+	text-align: left;
+}
+.contents-box p span {
+text-decoration: underline black 2px dotted;
+}
+/*ーーーーーーーーーーー*/
+/*Moreボタン
+/*ーーーーーーーーーーー*/
+.morebutton {
+	text-align: center;
+}
+
+.morebutton button {
+    width: 300px;
+	height: 60px;
+	background-color: chocolate;
+	color:white;
+	font-size: 21px;
+	border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+/*ーーーーーーーーーーー*/
+/*ACCESS
+/*ーーーーーーーーーーー*/
+.access {
+	margin: 0 auto;
+	width: 900px;
+	margin-bottom: 64px;
+	margin-top: 64px;
+	background-image: url(../img/compass-5137269_640.png);
+    background-size: cover;
+	object-fit: contain;
+	height: 250px;
+	-webkit-filter: grayscale(80%);
+    -moz-filter: grayscale(80%);
+    -ms-filter: grayscale(80%);
+    -o-filter: grayscale(80%);
+    filter: grayscale(80%);
+}
+
+.access:hover {
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+	}
+
+.access1  h4 {
+	padding-top: 64px;
+	text-align: center;
+	font-size: 30px;
+}
+
+.access2  p {
+	margin-bottom: 64px;
+	margin-top: 24px;
+	text-align: center;
+	font-size: 19px;
+}
+/*ーーーーーーーーーーー*/
+/*Gマップ
+/*ーーーーーーーーーーー*/
+iframe {
+	-webkit-filter: grayscale(80%);
+    -moz-filter: grayscale(80%);
+    -ms-filter: grayscale(80%);
+    -o-filter: grayscale(80%);
+    filter: grayscale(80%);
+}
+iframe:hover {
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+/*ーーーーーーーーーーー*/
+/*学校情報
+/*ーーーーーーーーーーー*/
+.school {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 48px 24px;
+}
+
+.school table tr {
+	text-align: center;
+}
+
+.school table td {
+	text-align: left;
+	padding-left: 48px;
+	padding-bottom: 24px;
+}
+
+.school table {
+	margin: auto;
+	margin-top: 64px;
+	margin-bottom: 40px;
+	width: auto;
+    padding-left: 100px;
+}
+/*ーーーーーーーーーーー*/
+/*コンタクト文言
+/*ーーーーーーーーーーー*/
+.contact {
+	margin: 0 auto;
+	width: 900px;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	background-image: url(../img/burger2.png);
+    background-size: cover;
+	object-fit: contain;
+	height: 250px;
+	-webkit-filter: grayscale(80%);
+    -moz-filter: grayscale(80%);
+    -ms-filter: grayscale(80%);
+    -o-filter: grayscale(80%);
+    filter: grayscale(80%);
+}
+
+.contact:hover {
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+	}
+
+.contact h4 {
+	text-align: center;
+	padding-top: 30px;
+	font-size: 30px;
+}
+.contact p {
+	text-align: center;
+	font-size: 18px;
+
+}
+.contact2 p {
+	text-align: center;
+	padding-bottom: 15px;
+	font-size: 18px;
+}
+.contact2 p span {
+    text-decoration:red underline dashed 2px;
+}
+
+
+/*ーーーーーーーーーーー*/
+/*フォーム
+/*ーーーーーーーーーーー*/
+.form {
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	border: #222222 solid 1px;
+}
+.table1 {
+	margin-left: auto;
+	margin-right: auto;
+}
+.table1 tr {
+	text-align: left;
+	padding-left: 100px;
+}
+.table1 th {
+    text-align: left;
+	font-size: 16px;
+}
+
+/*ーーーーーーーーーーー*/
+/*フォーム2
+/*ーーーーーーーーーーー*/
+.button2 {
+	text-align: center;
+}
+.buttonbg {
+    width: 298px;
+	height: 54px;
+	background-color: chocolate;
+	color:white;
+	font-size: 18px;
+	margin-top: 40px;
+	border: none;
+    cursor: pointer;
+    outline: none;
+}
+/*ーーーーーーーーーーー*/
+/*ページトップ
+/*ーーーーーーーーーーー*/
+/***トップへ戻るボタン***/
+#page-top {
+    display: block;
+    font-weight: bold;
+    padding: .1em;
+    text-align: center;
+    background: #fff; /*背景色*/
+    color: #666; /*文字色*/
+    transition: .3s;
+	margin-top: 20px;
+}
+/***トップへ戻るボタンここまで***/
+/*ーーーーーーーーーーー*/
+/*フッター
+/*ーーーーーーーーーーー*/
+footer {
+	width: 900px;
+	height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	background-color: #707070;
+}
+.copy p {
+	width: 900px;
+	color: white;
+	padding-top: 7px;
+	text-align: center;
+	width: 900px;
+}
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+---------------------*/
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
